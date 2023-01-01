@@ -1,3 +1,6 @@
 .mainTable {
   width: 100vw;
 }
+.clicked {
+  background-color: lightgrey;
+}

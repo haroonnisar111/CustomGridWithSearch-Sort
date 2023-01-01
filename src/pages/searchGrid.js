@@ -4,7 +4,6 @@ import './searchGrid.css';
 
 const SearchGrid = () => {
   const [data, setData] = React.useState([]);
-
   const [searchStr, setSearchStr] = React.useState('');
   const [pageNo, setPageNo] = React.useState(0);
 
@@ -83,7 +82,7 @@ const SearchGrid = () => {
         <ul className='pagination'>
           <li className='page-item'>
             <a
-              className={`${pageNo === 0 ? 'disabled' : 'page-link'}`}
+              className={`${pageNo !== 0 ? 'page-link' : 'disabled page-link'}`}
               onClick={() => customPagination(pageNo - 1)}
               aria-label='Previous'
             >
